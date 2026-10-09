@@ -1,3 +1,4 @@
+
 import { getServerSession } from "next-auth";
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
@@ -6,12 +7,12 @@ import bcrypt from "bcryptjs";
 import type { RowDataPacket } from "mysql2";
 import { getDb } from "./db";
 
-type UserRow = RowDataPacket & {
+interface UserRow extends RowDataPacket {
   id: number;
   name: string;
   email: string;
   password_hash: string | null;
-};
+}
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -24,25 +25,31 @@ export const authOptions: NextAuthOptions = {
       },
 
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) return null;
+        if (!credentials?.email || !credentials?.password) {
+          return null;
+        }
 
         const db = getDb();
 
-        const [rows] = await db.execute<UserRow[]>(
+        const [rows] = await db.execute(
           "SELECT id, name, email, password_hash FROM users WHERE email = ? LIMIT 1",
           [String(credentials.email).trim().toLowerCase()]
         );
 
-        const user = rows[0];
+        const user = (rows as UserRow[])[0];
 
-        if (!user?.password_hash) return null;
+        if (!user?.password_hash) {
+          return null;
+        }
 
         const valid = await bcrypt.compare(
           String(credentials.password),
           user.password_hash
         );
 
-        if (!valid) return null;
+        if (!valid) {
+          return null;
+        }
 
         return {
           id: String(user.id),
