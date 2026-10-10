@@ -58,13 +58,13 @@ export async function POST(req: Request) {
 
     // Delete any previous reset request for this email.
     await db.execute(
-      "DELETE FROM `password-resets` WHERE email = ?",
+      "DELETE FROM password_resets WHERE email = ?",
       [email]
     );
 
     // Save the new reset request.
     await db.execute(
-      `INSERT INTO \`password-resets\`
+      `INSERT INTO password_resets
        (email, code_hash, expires_at, verified_at)
        VALUES (?, ?, ?, NULL)`,
       [email, codeHash, expiresAt]
