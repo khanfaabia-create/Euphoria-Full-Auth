@@ -56,6 +56,20 @@ export async function POST(req: Request) {
     // Keep the code valid for 30 minutes.
     const expiresAt = new Date(Date.now() + 30 * 60 * 1000);
 
+    // Ensure the reset table exists in the database used by this deployment.
+    // This avoids a manual schema step after deploying to a fresh MySQL database.
+    await db.execute(`
+      CREATE TABLE IF NOT EXISTS password_resets (
+        id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+        email VARCHAR(255) NOT NULL,
+        code_hash CHAR(64) NOT NULL,
+        expires_at DATETIME NOT NULL,
+        verified_at DATETIME NULL DEFAULT NULL,
+        PRIMARY KEY (id),
+        KEY idx_password_resets_email (email)
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    `);
+
     // Delete any previous reset request for this email.
     await db.execute(
       "DELETE FROM password_resets WHERE email = ?",
