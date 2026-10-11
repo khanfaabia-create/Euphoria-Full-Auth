@@ -18,13 +18,19 @@ export async function GET() {
     } finally {
       connection.release();
     }
-  } catch (error) {
-    console.error("DB_CHECK_ERROR:", error);
+  } catch (error: unknown) {
+    const err = error as { code?: string; errno?: number };
+
+    console.error("DB_CHECK_ERROR:", {
+      code: err.code,
+      errno: err.errno,
+    });
 
     return NextResponse.json(
       {
         ok: false,
-        message: "Database connection or users table check failed.",
+        errorCode: err.code || "UNKNOWN_ERROR",
+        errorNumber: err.errno || null,
       },
       { status: 500 }
     );
