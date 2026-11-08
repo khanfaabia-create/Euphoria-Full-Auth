@@ -12,6 +12,18 @@ const products = [
   { id: 6, name: "Soft Knit Co-ord Set", category: "Combos", price: 4299, image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
   { id: 7, name: "Casual Summer Look", category: "Women", price: 3199, image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
   { id: 8, name: "Comfort Jogger Set", category: "Combos", price: 3899, image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85", tag: "POPULAR" },
+  { id: 9, name: "Minimal White T-Shirt", category: "Men", price: 1599, image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
+  { id: 10, name: "Urban Black Hoodie", category: "Men", price: 3299, image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
+  { id: 11, name: "Classic Blue Jeans", category: "Men", price: 3199, image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85", tag: "POPULAR" },
+  { id: 12, name: "Smart Casual Outfit", category: "Men", price: 4599, image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
+  { id: 13, name: "Women's Chic Outfit", category: "Women", price: 3799, image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85", tag: "BESTSELLER" },
+  { id: 14, name: "Elegant Beige Look", category: "Women", price: 4199, image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
+  { id: 15, name: "Weekend Co-ord", category: "Combos", price: 4499, image: "https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
+  { id: 16, name: "Relaxed Lounge Set", category: "Combos", price: 3999, image: "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=85", tag: "POPULAR" },
+  { id: 17, name: "Everyday Grey Joggers", category: "Joggers", price: 2199, image: "https://images.unsplash.com/photo-1506629905607-d9c297d7b2b8?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
+  { id: 18, name: "Sporty Streetwear Set", category: "Joggers", price: 3599, image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85", tag: "BESTSELLER" },
+  { id: 19, name: "Modern Layered Style", category: "Women", price: 3399, image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
+  { id: 20, name: "Premium Casual Shirt", category: "Men", price: 2799, image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
 ];
 
 const categories = [
