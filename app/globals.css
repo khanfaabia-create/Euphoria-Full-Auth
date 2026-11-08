@@ -208,3 +208,56 @@
     font-size: 32px;
   }
 }
+/* Euphoria storefront home */
+.euphoria-home{background:#fbfaf8;color:#1c1b19;min-height:100vh;font-family:Arial,Helvetica,sans-serif}
+.euphoria-topline{height:30px;background:#25231f;color:#fff;text-align:center;padding:8px 12px;font-size:9px;letter-spacing:.19em}
+.euphoria-header{height:86px;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between;gap:28px;background:#fbfaf8;border-bottom:1px solid #e9e5df;position:relative;z-index:5}
+.euphoria-brand{font:italic 27px Georgia,serif;letter-spacing:-.06em;color:#1c1b19;text-decoration:none;white-space:nowrap}
+.euphoria-brand span{display:block;text-align:center;font:7px Arial,sans-serif;letter-spacing:.25em;margin-top:4px}
+.euphoria-nav{display:flex;align-items:center;gap:30px}
+.euphoria-nav a{font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#292722;transition:opacity .2s}
+.euphoria-nav a:hover{opacity:.55}
+.euphoria-actions{display:flex;align-items:center;gap:14px}
+.euphoria-search{height:38px;width:190px;border:1px solid #ded9d1;display:flex;align-items:center;gap:8px;padding:0 11px;background:#fff}
+.euphoria-search span{font-size:22px;color:#777}
+.euphoria-search input{border:0;outline:0;width:100%;font-size:11px;background:transparent;color:#222}
+.euphoria-account{background:transparent;border:1px solid #292722;padding:11px 17px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;cursor:pointer}
+.euphoria-menu-toggle{display:none}
+.euphoria-hero{min-height:570px;display:grid;grid-template-columns:46% 54%;position:relative;background:#e9e3da}
+.euphoria-hero-copy{padding:105px 8% 85px 12%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.euphoria-kicker{font-size:9px;letter-spacing:.23em;color:#8b6b4d;font-weight:700}
+.euphoria-hero h1{font:normal clamp(54px,6vw,88px)/.98 Georgia,serif;letter-spacing:-.055em;margin:22px 0}
+.euphoria-hero h1 em{font-weight:400;color:#97785b}
+.euphoria-hero-desc{font:14px/1.8 Arial,sans-serif;color:#625d55;max-width:340px}
+.euphoria-cta{margin-top:27px;background:#26231f;color:#fff;padding:17px 22px;text-decoration:none;font-size:9px;letter-spacing:.15em}
+.euphoria-cta span{margin-left:25px;font-size:15px}
+.euphoria-welcome{font-size:10px;color:#756e64;margin-top:35px}
+.euphoria-hero-image{background:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1600&q=90') center 35%/cover no-repeat;min-height:570px}
+.euphoria-hero-index{position:absolute;right:5.5%;bottom:22px;color:#fff;font-size:9px;letter-spacing:.18em}
+.euphoria-section,.euphoria-featured{padding:88px 7%}
+.euphoria-section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}
+.euphoria-section-heading h2,.euphoria-note h2{font:normal clamp(32px,4vw,48px) Georgia,serif;letter-spacing:-.04em;margin:8px 0 0}
+.euphoria-section-heading>p,.euphoria-result-count{font-size:10px;color:#777;letter-spacing:.08em}
+.euphoria-category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.euphoria-category{height:360px;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end;padding:23px;color:white;text-decoration:none;transition:transform .2s}
+.euphoria-category:hover{transform:translateY(-4px)}
+.euphoria-category span{font-size:10px;letter-spacing:.1em}
+.euphoria-category strong{font:32px Georgia,serif;margin:7px 0 15px}
+.euphoria-category i{font-style:normal;font-size:9px;letter-spacing:.15em}
+.euphoria-featured{background:#f1eee8}
+.euphoria-product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.euphoria-product-image{height:330px;position:relative;background:#e5e0d8;overflow:hidden}
+.euphoria-product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.euphoria-product:hover img{transform:scale(1.04)}
+.euphoria-product-image span{position:absolute;left:12px;top:12px;background:#fbfaf8;padding:8px 10px;font-size:8px;letter-spacing:.12em}
+.euphoria-product>p{font-size:9px;color:#8b6b4d;text-transform:uppercase;letter-spacing:.13em;margin:17px 0 7px}
+.euphoria-product h3{font:20px Georgia,serif;font-weight:400;margin:0 0 9px}
+.euphoria-product>strong{font-size:11px;font-weight:500}
+.euphoria-no-results{font-size:13px;color:#777}
+.euphoria-note{text-align:center;padding:85px 20px;background:#e6ded3}
+.euphoria-note h2{margin:15px 0 25px}
+.euphoria-note>a{font-size:9px;letter-spacing:.15em;color:#25231f;text-decoration:none;border-bottom:1px solid #25231f;padding-bottom:7px}
+.euphoria-footer{padding:35px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.euphoria-footer p,.euphoria-footer>a:last-child{font-size:9px;color:#777;text-decoration:none;letter-spacing:.08em}
+@media(max-width:1000px){.euphoria-header{padding:0 3%;gap:15px}.euphoria-nav{gap:15px}.euphoria-search{width:150px}.euphoria-category{height:290px}.euphoria-product-image{height:270px}}
+@media(max-width:760px){.euphoria-topline{font-size:7px;letter-spacing:.1em}.euphoria-header{height:72px;padding:0 18px;gap:12px}.euphoria-brand{font-size:23px}.euphoria-menu-toggle{display:block;margin-left:auto;border:0;background:none;font-size:22px;color:#222}.euphoria-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fbfaf8;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid #e9e5df}.euphoria-nav.is-open{display:flex}.euphoria-actions{gap:7px}.euphoria-search{width:38px;padding:0 8px;border:0;background:transparent}.euphoria-search input{width:0;min-width:0}.euphoria-search:focus-within{position:absolute;right:18px;top:78px;width:calc(100% - 36px);background:#fff;border:1px solid #ded9d1}.euphoria-search:focus-within input{width:100%}.euphoria-account{padding:9px;font-size:8px}.euphoria-hero{grid-template-columns:1fr;min-height:0}.euphoria-hero-copy{padding:65px 28px 45px}.euphoria-hero h1{font-size:60px}.euphoria-hero-image{min-height:390px}.euphoria-hero-index{color:#fff;bottom:15px}.euphoria-section,.euphoria-featured{padding:58px 20px}.euphoria-section-heading{align-items:flex-start;gap:15px;flex-direction:column}.euphoria-category-grid{grid-template-columns:repeat(2,1fr);gap:10px}.euphoria-category{height:250px;padding:15px}.euphoria-category strong{font-size:26px}.euphoria-product-grid{grid-template-columns:repeat(2,1fr);gap:22px 11px}.euphoria-product-image{height:235px}.euphoria-product h3{font-size:16px}.euphoria-note{padding:65px 20px}.euphoria-footer{padding:28px 20px;flex-wrap:wrap}.euphoria-footer p{order:3;width:100%;margin:0}}
