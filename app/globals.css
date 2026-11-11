@@ -388,3 +388,55 @@
 .pl-color-options{display:flex;flex-wrap:wrap;gap:6px}
 .pl-color-options button{min-width:58px;height:30px;padding:0 9px;border:1px solid #d9d2c9;background:transparent;color:#514b43;font-size:9px;cursor:pointer}
 .pl-color-options button.chosen{background:#292620;color:#fff;border-color:#292620}
+
+
+/* Euphoria individual product detail page */
+.pl-product-title-link{color:inherit;text-decoration:none}
+.pl-product-title-link:hover{text-decoration:underline;text-underline-offset:4px}
+.pd-page{min-height:100vh;background:#f8f7f4;color:#24221e;font-family:Arial,Helvetica,sans-serif}
+.pd-breadcrumb{padding:25px 6%;display:flex;gap:10px;align-items:center;color:#8a8379;font-size:10px}
+.pd-breadcrumb a{color:#8a8379;text-decoration:none}
+.pd-breadcrumb strong{font-weight:500;color:#292722}
+.pd-main{padding:25px 8% 85px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:7%;align-items:start;max-width:1500px;margin:auto}
+.pd-image-wrap{position:relative;background:#e9e4dc;min-height:620px;max-height:780px;overflow:hidden}
+.pd-main-image{display:block;width:100%;height:100%;min-height:620px;max-height:780px;object-fit:cover}
+.pd-tag{position:absolute;top:18px;left:18px;background:#fbfaf8;padding:10px 13px;font-size:8px;letter-spacing:.14em}
+.pd-info{padding:22px 0}
+.pd-eyebrow{font-size:9px;letter-spacing:.2em;color:#967959;margin:0 0 17px}
+.pd-info h1{font:normal clamp(34px,4vw,52px)/1.08 Georgia,serif;letter-spacing:-.045em;margin:0 0 17px}
+.pd-price{font-size:18px;margin:0 0 6px}
+.pd-tax-note{font-size:10px;color:#8a8379;margin:0}
+.pd-rule{height:1px;background:#e3ddd4;margin:25px 0}
+.pd-option-heading{display:flex;justify-content:space-between;align-items:center;margin:0 0 12px;font-size:11px}
+.pd-option-heading strong{font-weight:600}
+.pd-option-heading span{color:#77716a}
+.pd-color-choice{display:flex;align-items:center;gap:10px;font-size:10px;color:#625d55}
+.pd-swatch{width:23px;height:23px;border:1px solid #cfc8bf;border-radius:50%;display:inline-block;background:#ddd}
+.pd-swatch-black{background:#242424}.pd-swatch-white{background:#fff}.pd-swatch-grey{background:#929292}.pd-swatch-beige{background:#d7c3a5}.pd-swatch-blue{background:#466b9a}.pd-swatch-pink{background:#e5a6b7}.pd-swatch-brown{background:#76513b}.pd-swatch-green{background:#647b58}.pd-swatch-navy{background:#202f4e}
+.pd-size-heading{margin-top:26px}
+.pd-size-heading span{font-size:9px;text-decoration:underline;text-underline-offset:3px}
+.pd-size-grid{display:flex;flex-wrap:wrap;gap:8px}
+.pd-size-grid button{min-width:43px;height:39px;padding:0 9px;border:1px solid #d8d1c8;background:transparent;color:#39352f;font-size:10px;cursor:pointer}
+.pd-size-grid button.selected,.pd-size-grid button:hover{background:#292620;border-color:#292620;color:#fff}
+.pd-quantity-heading{margin-top:26px}
+.pd-quantity{display:inline-flex;align-items:center;border:1px solid #d8d1c8;height:42px}
+.pd-quantity button{width:42px;height:40px;border:0;background:transparent;font-size:19px;cursor:pointer}
+.pd-quantity span{min-width:34px;text-align:center;font-size:11px}
+.pd-add{display:block;width:100%;height:52px;margin-top:22px;background:#292620;border:1px solid #292620;color:#fff;font-size:9px;letter-spacing:.16em;cursor:pointer}
+.pd-add:hover{background:transparent;color:#292620}
+.pd-added{padding:13px 15px;background:#e8e2d8;color:#39352f;font-size:11px;line-height:1.6}
+.pd-description{font:12px/1.9 Arial,sans-serif;color:#71695f;margin:25px 0}
+.pd-details{border-top:1px solid #e3ddd4}
+.pd-details div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid #e3ddd4;font-size:10px}
+.pd-details strong{font-weight:600}.pd-details span{color:#77716a;text-align:right}
+.pd-related{padding:65px 8% 85px;background:#f0ece5}
+.pd-related-heading>p{font-size:9px;letter-spacing:.2em;color:#967959}
+.pd-related-heading h2{font:normal 36px Georgia,serif;margin:8px 0 28px}
+.pd-related-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pd-related-card{display:flex;flex-direction:column;gap:8px;color:#292620;text-decoration:none;min-width:0}
+.pd-related-card img{width:100%;height:270px;object-fit:cover;background:#e5e0d8}
+.pd-related-card span{font-size:8px;letter-spacing:.12em;color:#947653;text-transform:uppercase}
+.pd-related-card strong{font:normal 17px Georgia,serif}
+.pd-related-card small{font-size:10px}
+@media(max-width:900px){.pd-main{padding:20px 4% 65px;gap:4%;grid-template-columns:minmax(0,1fr) minmax(310px,.95fr)}.pd-image-wrap,.pd-main-image{min-height:520px}.pd-related{padding-left:4%;padding-right:4%}.pd-related-card img{height:220px}}
+@media(max-width:650px){.pd-breadcrumb{padding:18px}.pd-main{display:block;padding:10px 18px 55px}.pd-image-wrap,.pd-main-image{min-height:0;height:auto;max-height:none;aspect-ratio:4/5}.pd-info{padding:30px 0 0}.pd-info h1{font-size:39px}.pd-related{padding:50px 18px}.pd-related-heading h2{font-size:30px}.pd-related-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 12px}.pd-related-card img{height:clamp(180px,58vw,260px)}.pd-related-card strong{font-size:15px}}
