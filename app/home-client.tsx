@@ -50,15 +50,15 @@ export default function HomeClient({ name }: { name: string }) {
 
   return (
     <main className="euphoria-home">
-      <div className="euphoria-topline">FREE SHIPPING ON SELECTED ORDERS · YOUR STYLE, YOUR STORY</div>
+      <div className="euphoria-topline">FREE SHIPPING ON SELECTED ORDERS Â· YOUR STYLE, YOUR STORY</div>
       <header className="euphoria-header">
         <a className="euphoria-brand" href="/">EUPHORIA<span>FEEL THE STYLE</span></a>
-        <button className="euphoria-menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">☰</button>
+        <button className="euphoria-menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">â˜°</button>
         <nav className={menuOpen ? "euphoria-nav is-open" : "euphoria-nav"} aria-label="Main navigation">
           <a href="#collections">Shop</a><a href="#men" onClick={() => setActiveCategory("Men")}>Men</a><a href="#women" onClick={() => setActiveCategory("Women")}>Women</a><a href="#combos" onClick={() => setActiveCategory("Combos")}>Combos</a><a href="#joggers" onClick={() => setActiveCategory("Joggers")}>Joggers</a>
         </nav>
         <div className="euphoria-actions">
-          <label className="euphoria-search"><span>⌕</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search products..." aria-label="Search products" /></label>
+          <label className="euphoria-search"><span>âŒ•</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search products..." aria-label="Search products" /></label>
           <button className="euphoria-cart" onClick={() => setAddedProduct(cartCount ? `You have ${cartCount} item(s) in your demo bag.` : "Your bag is empty.")}>BAG ({cartCount})</button>
           <button className="euphoria-account" onClick={() => signOut({ callbackUrl: "/login" })}>Logout</button>
         </div>
@@ -69,7 +69,7 @@ export default function HomeClient({ name }: { name: string }) {
           <p className="euphoria-kicker">THE NEW SEASON EDIT</p>
           <h1>Wear your<br/><em>own story.</em></h1>
           <p className="euphoria-hero-desc">Fresh fits. Everyday comfort. A little more you in every look.</p>
-          <a className="euphoria-cta" href="#featured">SHOP THE COLLECTION <span>↗</span></a>
+          <a className="euphoria-cta" href="#featured">SHOP THE COLLECTION <span>â†—</span></a>
           <p className="euphoria-welcome">Welcome back, {name}.</p>
         </div>
         <div className="euphoria-hero-image" role="img" aria-label="Fashion collection editorial" />
@@ -79,7 +79,7 @@ export default function HomeClient({ name }: { name: string }) {
       <section className="euphoria-section" id="collections">
         <div className="euphoria-section-heading"><div><p className="euphoria-kicker">FIND YOUR FIT</p><h2>Shop by category</h2></div><p>Pieces made to move with you.</p></div>
         <div className="euphoria-category-grid">
-          {categories.map((item) => <a className="euphoria-category" id={item.name.toLowerCase()} href="#featured" key={item.name} onClick={() => setActiveCategory(item.name)} style={{ backgroundImage: `linear-gradient(180deg, transparent 35%, rgba(0,0,0,.65)), url(${item.image})` }}><span>{item.note}</span><strong>{item.name}</strong><i>EXPLORE ↗</i></a>)}
+          {categories.map((item) => <a className="euphoria-category" id={item.name.toLowerCase()} href="#featured" key={item.name} onClick={() => setActiveCategory(item.name)} style={{ backgroundImage: `linear-gradient(180deg, transparent 35%, rgba(0,0,0,.65)), url(${item.image})` }}><span>{item.note}</span><strong>{item.name}</strong><i>EXPLORE â†—</i></a>)}
         </div>
       </section>
 
@@ -100,8 +100,8 @@ export default function HomeClient({ name }: { name: string }) {
         {addedProduct && <p className="euphoria-cart-message" role="status">{addedProduct}</p>}
       </section>
 
-      <section className="euphoria-note"><p className="euphoria-kicker">MADE FOR EVERY VERSION OF YOU</p><h2>Comfort looks good on you.</h2><a href="#collections">DISCOVER EUPHORIA ↗</a></section>
-      <footer className="euphoria-footer"><a className="euphoria-brand" href="/">EUPHORIA<span>FEEL THE STYLE</span></a><p>© {new Date().getFullYear()} Euphoria. All style, all yours.</p><a href="#collections">BACK TO TOP ↑</a></footer>
+      <section className="euphoria-note"><p className="euphoria-kicker">MADE FOR EVERY VERSION OF YOU</p><h2>Comfort looks good on you.</h2><a href="#collections">DISCOVER EUPHORIA â†—</a></section>
+      <footer className="euphoria-footer"><a className="euphoria-brand" href="/">EUPHORIA<span>FEEL THE STYLE</span></a><p>Â© {new Date().getFullYear()} Euphoria. All style, all yours.</p><a href="#collections">BACK TO TOP â†‘</a></footer>
     </main>
   );
 }
