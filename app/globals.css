@@ -374,3 +374,11 @@
 .pl-seo-copy h2{font:normal 25px Georgia,serif;color:#292620;margin:28px 0 12px}
 .pl-seo-copy p{font:12px/1.9 Arial,sans-serif;max-width:1050px;margin:0;color:#77716a}
 @media(max-width:650px){.pl-seo-copy{padding:0 18px 45px}.pl-seo-copy h2{font-size:21px}.pl-seo-copy p{font-size:11px;line-height:1.8}}
+
+
+/* Boxed SEO information panel below product listing */
+.pl-seo-copy{margin:0 6% 65px;padding:30px 34px;background:#f0ece5;border:1px solid #ded5c9;border-radius:3px;box-shadow:0 5px 18px rgba(45,37,27,.045)}
+.pl-seo-copy h2{font:normal 24px Georgia,serif;color:#292620;margin:0 0 10px}
+.pl-seo-copy h2:not(:first-child){margin-top:26px;padding-top:22px;border-top:1px solid #d9d0c4}
+.pl-seo-copy p{font:12px/1.9 Arial,sans-serif;max-width:1050px;margin:0;color:#71695f}
+@media(max-width:650px){.pl-seo-copy{margin:0 18px 45px;padding:22px 19px}.pl-seo-copy h2{font-size:21px}.pl-seo-copy p{font-size:11px;line-height:1.8}}
