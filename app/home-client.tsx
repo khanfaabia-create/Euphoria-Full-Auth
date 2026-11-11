@@ -20,7 +20,7 @@ const products = [
   { id: 14, name: "Elegant Beige Look", category: "Women", price: 4199, image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
   { id: 15, name: "Weekend Co-ord", category: "Combos", price: 4499, image: "https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
   { id: 16, name: "Relaxed Lounge Set", category: "Combos", price: 3999, image: "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=85", tag: "POPULAR" },
-  { id: 17, name: "Everyday Grey Joggers", category: "Joggers", price: 2199, image: "https://images.unsplash.com/photo-1506629905607-d9c297d7b2b8?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
+  { id: 17, name: "Everyday Grey Joggers", category: "Joggers", price: 2199, image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
   { id: 18, name: "Sporty Streetwear Set", category: "Joggers", price: 3599, image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85", tag: "BESTSELLER" },
   { id: 19, name: "Modern Layered Style", category: "Women", price: 3399, image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85", tag: "TRENDING" },
   { id: 20, name: "Premium Casual Shirt", category: "Men", price: 2799, image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85", tag: "NEW" },
