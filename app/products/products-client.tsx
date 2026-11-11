@@ -82,6 +82,12 @@ export default function ProductsClient(){
     <div className="pl-layout"><aside className={"pl-sidebar "+(mobileFilters?"open":"")}>{filters}</aside>
       <section className="pl-results"><div className="pl-grid">{visible.map(p=><article className="pl-card" key={p.id}><Link href={"/#featured"} className="pl-image"><img src={p.image} alt={p.name} loading="lazy"/><span>{p.tag}</span></Link><div className="pl-meta">{p.category.toUpperCase()} <span>{p.brand.toUpperCase()}</span></div><h2>{p.name}</h2><p className="pl-price">{money(p.price)}</p><button className="pl-add" onClick={()=>setBag(old=>[...old,p.id])}>{bag.includes(p.id)?"ADD ANOTHER +":"ADD TO BAG +"}</button></article>)}</div>{visible.length===0&&<div className="pl-empty"><h2>No products found</h2><p>Try changing your filters to see more styles.</p><button onClick={reset}>CLEAR FILTERS</button></div>}</section>
     </div>
+    <section className="pl-seo-copy">
+      <h2>Clothing for Women Online in India</h2>
+      <p>Explore effortless everyday fashion with Euphoria. Discover women’s clothing, versatile tops, comfortable co-ord sets and statement styles for every occasion. Browse the collection, compare your favourites and find pieces that make getting dressed feel easy.</p>
+      <h2>Buy Women’s Clothing at Best Prices</h2>
+      <p>Refresh your wardrobe with stylish options at considered prices. From relaxed everyday outfits to elevated looks for weekends and special plans, shop women’s fashion in a range of colours, fits and sizes. Use the filters above to find the style that suits you.</p>
+    </section>
     <section className="pl-editorial"><p>MADE FOR EVERY VERSION OF YOU</p><h2>Find your everyday favourite.</h2><Link href="/">DISCOVER EUPHORIA ↗</Link></section>
     <footer className="pl-footer"><Link href="/" className="pl-logo">EUPHORIA<span>FEEL THE STYLE</span></Link><p>© {new Date().getFullYear()} Euphoria. All style, all yours.</p><Link href="/">BACK TO HOME ↑</Link></footer>
   </main>;
