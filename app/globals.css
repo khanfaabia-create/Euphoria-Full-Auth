@@ -382,3 +382,9 @@
 .pl-seo-copy h2:not(:first-child){margin-top:26px;padding-top:22px;border-top:1px solid #d9d0c4}
 .pl-seo-copy p{font:12px/1.9 Arial,sans-serif;max-width:1050px;margin:0;color:#71695f}
 @media(max-width:650px){.pl-seo-copy{margin:0 18px 45px;padding:22px 19px}.pl-seo-copy h2{font-size:21px}.pl-seo-copy p{font-size:11px;line-height:1.8}}
+
+
+/* Box-style color filter options */
+.pl-color-options{display:flex;flex-wrap:wrap;gap:6px}
+.pl-color-options button{min-width:58px;height:30px;padding:0 9px;border:1px solid #d9d2c9;background:transparent;color:#514b43;font-size:9px;cursor:pointer}
+.pl-color-options button.chosen{background:#292620;color:#fff;border-color:#292620}
