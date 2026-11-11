@@ -97,7 +97,16 @@ export default function ProductDetailClient({ productId }: { productId: number }
         <div className="pd-related-grid">{related.map((item) => <Link href={`/products/${item.id}`} className="pd-related-card" key={item.id}><img src={item.image} alt={item.name}/><span>{item.category}</span><strong>{item.name}</strong><small>{money(item.price)}</small></Link>)}</div>
       </section>}
 
-      <footer className="pl-footer"><Link href="/" className="pl-logo">EUPHORIA<span>FEEL THE STYLE</span></Link><p>© {new Date().getFullYear()} Euphoria. All style, all yours.</p><Link href="/products">BACK TO SHOP ↑</Link></footer>
+      <footer className="pd-footer">
+        <div className="pd-footer-top">
+          <div className="pd-footer-brand"><Link href="/" className="pl-logo">EUPHORIA<span>FEEL THE STYLE</span></Link><p>Style that feels like you. Discover everyday favourites and make every look your own.</p></div>
+          <div className="pd-footer-column"><h3>NEED HELP</h3><Link href="/contact">Contact Us</Link><Link href="/faq">FAQs</Link><Link href="/shipping">Shipping & Delivery</Link><Link href="/returns">Returns & Exchanges</Link></div>
+          <div className="pd-footer-column"><h3>COMPANY</h3><Link href="/about">About Us</Link><Link href="/careers">Careers</Link><Link href="/products">Shop All</Link></div>
+          <div className="pd-footer-column"><h3>MORE INFO</h3><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms & Conditions</Link><Link href="/refund-policy">Refund Policy</Link></div>
+          <div className="pd-footer-column"><h3>LOCATION</h3><p>Pakistan</p><p>Online Store</p><p>Customer support: Contact Us</p></div>
+        </div>
+        <div className="pd-footer-bottom"><span>© {new Date().getFullYear()} Euphoria. All rights reserved.</span><Link href="/products">BACK TO SHOP ↑</Link></div>
+      </footer>
     </main>
   );
 }
